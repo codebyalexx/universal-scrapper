@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Artist {
+  id String @unique @default(cuid())
+
+  name      String?
+  sources   ArtistSource[]
+  createdAt DateTime       @default(now())
+}
+
+model ArtistSource {
+  id String @unique @default(cuid())
+
+  sourceName String?
+  files      SourceFile[]
+  createdAt  DateTime     @default(now())
+
+  Artist   Artist? @relation(fields: [artistId], references: [id], onDelete: Cascade)
+  artistId String?
+}
+
+model SourceFile {
+  id String @unique @default(cuid())
+
+  path      String?
+  type      String?
+  status    Int
+  createdAt DateTime @default(now())
+
+  ArtistSource   ArtistSource? @relation(fields: [artistSourceId], references: [id], onDelete: NoAction)
+  artistSourceId String?
+}

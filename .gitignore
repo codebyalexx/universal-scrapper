@@ -48,3 +48,4 @@ databases/**/migrations/
 prisma/**/migrations/
 experimental/**/*.db
 dev.db
+dev.db-journal

@@ -69,13 +69,13 @@ export const HeaderNavigationMenu = () => {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/settings" title="Configuration">
-                Here you can configure the app behavior such as download speed, its number, the resolution of files, etc...
-              </ListItem>
-              <ListItem href="/docs/installation" title="Migration">
+              <ListItem href="/migration" title="Install & Migrate">
                 All you need to know to migrate universal scraper app to the latest version. Whatever the version you are!
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Support">
+              <ListItem href="/configuration" title="Configuration">
+                Here you can configure the app behavior such as download speed, its number, the resolution of files, etc...
+              </ListItem>
+              <ListItem href="https://discord.gg/GE8MNBPXFy" target="_blank" title="Support">
                 In case you need support using our app, just join our discord clicking this link! Someone will probably help you!
               </ListItem>
             </ul>

@@ -1,63 +1,36 @@
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Universal Scrapper
+## Getting Started
 
-Hello, world to Universal Scrapper repository. Universal Scrapper is a project born by the desire of publishing a open source tool to scrape website assets such as images and videos BUT for a large variety of websites.
-
-I think that this kind of project should be published as open source as it's more easy to deploy app localy for everyone. It could be a Saas but this is not legal (depending on your coutry). The project's directive is to cover much websites as possibles and it's for this reason too that open source is the good way to do!
-## Installation
-
-Install my-project using git and npm
+First, run the development server:
 
 ```bash
-  git clone https://github.com/codebyalexx/universal-scrapper
-  cd universal-scrapper
-  npm install
-  npm start
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Supported Websites
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Kemono ([Link](https://kemono.su/))
-## FAQ
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-#### The website that I want to scrappe is not supported by tool, can I try the scrappe anyway?
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Yes! If the website is not listed in supported website, you can try to use the tool. In >50% of cases, it will work but not perfectly, as it will don't distingish images such as icons etc... from the images that you want to download. **In case it doesn't work** : contribute to the project, or contact me (contact infos above) to find a solution! You can open a issue too!
+## Learn More
 
-#### What's the mega super secret feature that will be developped soon?
+To learn more about Next.js, take a look at the following resources:
 
-The feature that I'd love to work to is a GPT tool to make a summary of each pages of a X website. It could be exported to a simple txt file or pushed on a blog using an API, generating a PDF... etc...
-## Documentation
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Project's documentation will be ready ASAP!
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-[React Docs](https://react.dev/reference/react)
+## Deploy on Vercel
 
-[Puppeteer Docs](https://pptr.dev/)
-## Contributing
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Contributions are always welcome!
-
-To permit a long-term project life, here are some rules to contribute to the project :
-- Always use typescript and typesafe code
-- Always match with ESLint of the project
-- Respect the project's structure (including commits)
-- Never use custom CSS, only tailwind
-- Limit external libraries import as much as possible
-
-Do not hesitate to share ideas about these rules, note that the code has not to be perfect as he will be reviewed by myself so don't worry!
-
-#### Commit structure
-
-The project commit structure is : `{emoji} {message in PAST}`, example : **✨ Created homepage react component**.
-
-You should use [gitmoji.dev](https://gitmoji.dev) tool to get the more accurate emoji related to the commit message.
-## Support
-
-For support, email me at a.legal.contact@gmail.com or join my [Discord Server](https://discord.gg/E6CTED7p6K) to send me a private message.
-
-
-## Authors & contributors
-
-- [@codebyalexx](https://www.github.com/codebyalexx)
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

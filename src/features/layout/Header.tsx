@@ -3,12 +3,15 @@
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 export const Header = ({className}: {className?: string}) => {
   return (<div className={(cn("container max-w-2xl flex items-center h-full", className))}>
     <header className="w-full flex justify-between items-center p-2">
-      <h1 className="text-2xl font-bold text-foreground">Universal Scraper</h1>
+      <Link href={"/"}>
+        <h1 className="text-2xl font-bold text-foreground">Universal Scraper</h1>
+      </Link>
       <div>
         <HeaderNavigationMenu />
       </div>

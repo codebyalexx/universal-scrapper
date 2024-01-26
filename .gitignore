@@ -34,3 +34,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ides
+.code
+.vscode
+.idea
+
+# prisma
+javascript/**/migrations/
+typescript/**/migrations/
+misc/**/migrations/
+databases/**/migrations/
+prisma/**/migrations/
+experimental/**/*.db
+dev.db

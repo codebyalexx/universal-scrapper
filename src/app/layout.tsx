@@ -1,3 +1,4 @@
+import { Header } from "@/features/layout/Header";
 import { ThemeProvider } from "@/features/theme/ThemeProvider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -19,11 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
-        "m-6 bg-background h-full",
+        "m-3 bg-background h-full",
         inter.className
       )}>
         <ThemeProvider attribute={'class'} defaultTheme={'system'} enableSystem>
-          {children}
+          <div className="flex flex-col h-full">
+            <Header />
+            <div className="flex-1 w-full max-w-xl py-6 m-auto pb-14">
+              {children}
+            </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -23,12 +23,12 @@ const addMenuItems = [
   {
     title: 'Artist',
     description: 'Create a artist gives you the ability to download same artist from multiples sources.',
-    href: '/'
+    href: '/artists/create'
   },
   {
     title: 'Source',
     description: 'Add a source of an artist to start the download of its content. You must have created the artist first!',
-    href: '/'
+    href: '/artists/sources/add'
   }
 ]
 
@@ -88,7 +88,7 @@ export const HeaderNavigationMenu = () => {
     </NavigationMenu>
   )
 }
- 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">

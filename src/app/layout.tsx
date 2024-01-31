@@ -15,8 +15,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  createartistmodal
 }: Readonly<{
   children: React.ReactNode;
+  createartistmodal?: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -32,6 +34,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
+          {createartistmodal}
         </ThemeProvider>
       </body>
     </html>
